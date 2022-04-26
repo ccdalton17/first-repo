@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Spline Sans', sans-serif;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+/* Universal Styles */
+
+h1 {
+  font-size: 4rem;
+  line-height: 112.5%;
+  font-weight: 700;
+  max-width: 448px;
+  margin-bottom: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 125%;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 133%;
+  font-weight: 400;
+  padding: 2rem;
+}
+
+h4 {
+  font-size: 0.875rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.small {
+  font-size: 0.875rem;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.dark {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+#darktext {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.light {
+  color: white;
+}
+
+.light a {
+  color: white;
+}
+
+.center {
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* Showcase */
+
+header {
+  position: relative;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img
+{
+  width: 200px;
+}
+
+.logo {
+  flex-wrap: wrap;
+}
+
+.showcase {
+  position: relative;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background:#111;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.showcase video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+.text
+{
+  position: relative;
+  z-index: 10;
+}
+
+.text h2
+{
+  font-size: 5em;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1em;
+}
+
+.text h3
+{
+  font-size: 4em;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1em;  
+}
+
+.text p
+{
+  font-size: 1.2em;
+  color: #fff;
+  margin: 20px 0;
+  font-weight: 400;
+  max-width: 700px;
+}
+
+.text a
+{
+  display: inline-block;
+  font-size: 1em;
+  background: #fff;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 10px;
+  color: #111;
+  letter-spacing: 2px;
+  transition: 0.2s;
+}
+
+.text a:hover
+{
+  letter-spacing: 6px;
+}
+
+.social
+{
+  position: absolute;
+  z-index: 10;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social li
+{
+  list-style: none;
+}
+
+.social li a
+{
+  display: inline-block;
+  margin-right: 20px;
+  filter: invert(1);
+  transform: scale(0.75);
+  transition: 0.5s;
+}
+
+.social li a:hover
+{
+  transform: scale(0.95)
+}
+
+@media (max-width: 770px)
+{
+  .showcase,
+  .showcase header
+  {
+    padding: 40px;
+  }
+  .text h2
+  {
+    font-size: 3em;
+  }
+  .text h3
+  {
+    font-size: 2em;
+  }
+}
+/* Re-usable Container Styles */
+
+.flex-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px 0 150px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 20px;
+}
+
+.content {
+  grid-column: 2 / span 10;
+  align-items: center;
+  z-index: 2;
+  padding: 7.5rem 0;
+}
+
+/* Button Styles */
+
+.button {
+  display: inline-flex;
+  height: 200px;
+  width: 500px;
+  border: 5px outset #9D1E1D;
+  margin: 20px 20px 20px 20px;
+  background-color: #83bdff30;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 3em;
+  letter-spacing: 1.5px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 100px;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  letter-spacing: 1px;
+  opacity: 0.6;
+}
+
+#button-5 {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#button-5:active {
+  border: 5px inset #9D1E1D;
+  background-color: #3f82cf30;
+
+}
+
+#button-5 a {
+  position: relative;
+  transition: all .45s ease-Out;
+}
+
+#translate {
+  transform: rotate(50deg);
+  width: 100%;
+  height: 150%;
+  left: -500px;
+  top: -30px;
+  background: #ba909075;
+  position: absolute;
+  transition: all .3s ease-Out;
+}
+
+#button-5:hover #translate {
+  left: 0;
+}
+
+#button-5:hover a {
+  color: #2D3142;
+}
+
+/* Tags */
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-column-gap: 20px;
+}
+
+.content {
+  grid-column: 2 / span 6;
+  align-items: center;
+  z-index: 2;
+  padding: 7.5rem 0;
+}
+
+.center {
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+#tags {
+  background-image: url('resources/blur.jpg');
+  background-size: cover;
+}
+
+/* Featured Book Review */
+#featured-review {
+  background-image: url('resources/blur2.jpg');
+  background-size: cover;
+}
+
+.book-of-month {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  padding: 0px 0px 40px 40px;
+}
+
+p strong {
+  font-size: 1.5em;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.book-of-month p {
+  font-size: 2.2em;
+  width: 50%;
+  margin: 5%;
+  flex-shrink: 1;
+  color: white;
+}
+
+.book-of-month img {
+  align-self: center;
+  width: 25%;
+  height: auto;
+  padding: 5px;
+  border: .2em solid #ef11114f;
+  opacity: 90%;
+}
+
+/* Footer */
+
+footer {
+  width: 100%;
+  padding: 20px 0;
+  background-color:rgba(28, 5, 44, 0.577);
+  display: block;
+}
+
+.footer-logo {
+  text-align: center;
+}
+
+.contact {
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  padding-bottom: 10px;
+}
